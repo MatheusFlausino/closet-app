@@ -98,6 +98,12 @@
     <string name="option_no">Não</string>
     <string name="message_alert">Você deseja excluir essa(s) roupa(s) ?</string>
 
+    <string name="label_favorite">Favorito</string>
+    <string name="label_color">Cor</string>
+    <string name="label_model">Modelo</string>
+    <string name="label_type">Tipo</string>
+    <string name="label_noData">Não há Dados Salvos</string>
+
     <plurals name="selecionado">
         <item quantity="one">%d selecionado</item>
         <item quantity="other">%d selecionados</item>

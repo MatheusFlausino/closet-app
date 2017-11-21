@@ -62,7 +62,7 @@
                     android:id="@+id/typeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tipo"
+                    android:text="@string/label_type"
                     android:textSize="@dimen/text_size"/>
                 <Spinner
                     android:id="@+id/typeSpinner"
@@ -73,7 +73,7 @@
                     android:id="@+id/modelText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Modelo"
+                    android:text="@string/label_model"
                     android:textSize="@dimen/text_size"/>
 
                 <MultiAutoCompleteTextView
@@ -90,7 +90,7 @@
                     android:id="@+id/colorText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cor"
+                    android:text="@string/label_color"
                     android:textSize="@dimen/text_size"/>
                 <MultiAutoCompleteTextView
                     android:id="@+id/colorMultiAuto"
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Favorito"
+                    android:text="@string/label_favorite"
                     android:textSize="@dimen/text_size"
                     android:imeOptions="actionDone"/>
             </LinearLayout>
