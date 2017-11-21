@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Closet App</string>
+    <string name="title_activity_about">Sobre</string>
+
+    <string name="preference" translatable="false">com.matheusflausino.sharedpreferences.PREFERENCES</string>
+
+    <string name="all_list">Todos</string>
+
+    <string-array name="default_types">
+        <item>Acessórios</item>
+        <item>Agasalhos</item>
+        <item>Bermudas</item>
+        <item>Blusas</item>
+        <item>Bolsas</item>
+        <item>Bonés</item>
+        <item>Botas</item>
+        <item>Calças</item>
+        <item>Camisas</item>
+        <item>Camisas Polo</item>
+        <item>Camisetas</item>
+        <item>Chinelos e Sandálias</item>
+        <item>Jaquetas e Casacos</item>
+        <item>Leggings</item>
+        <item>Malas e Mochilas</item>
+        <item>Meias</item>
+        <item>Óculos</item>
+        <item>Relógios</item>
+        <item>Saias</item>
+        <item>Sapatênis</item>
+        <item>Sapatilhas</item>
+        <item>Sapatos</item>
+        <item>Shorts</item>
+        <item>Tênis</item>
+        <item>Tops</item>
+        <item>Vestidos</item>
+    </string-array>
+
+    <string-array name="default_models">
+        <item>Boho</item>
+        <item>Casual</item>
+        <item>Cool</item>
+        <item>Geek</item>
+        <item>Hippie Chic</item>
+        <item>Ladylike</item>
+        <item>Piriguete</item>
+        <item>Rocker</item>
+        <item>Sexy</item>
+        <item>Vintage</item>
+    </string-array>
+
+    <string-array name="default_colors">
+        <item>Amarelo</item>
+        <item>Azul</item>
+        <item>Azul Marinho</item>
+        <item>Azul Petroleo</item>
+        <item>Bege</item>
+        <item>Branco</item>
+        <item>Cinza</item>
+        <item>Colorida</item>
+        <item>Creme</item>
+        <item>Dourado</item>
+        <item>Estampado</item>
+        <item>Laranja</item>
+        <item>Marrom</item>
+        <item>Off White</item>
+        <item>Preto</item>
+        <item>Rosa</item>
+        <item>Roxo</item>
+        <item>Salmão</item>
+        <item>Verde</item>
+        <item>Vinho</item>
+        <item>Vermelho</item>
+    </string-array>
+
+    <string name="menu_add">Adicionar</string>
+    <string name="menu_info">Sobre</string>
+    <string name="menu_item_delete">Deletar</string>
+
+
+    <string name="text_about">
+        Aplicativo que lista todas as roupas do seu armário, com especificações: Tipo, Cor, Modelo e Foto.
+        \n\n
+        Você pode declarar quais as roupas que você quer colocar como favorita.
+    </string>
+    <string name="text_author"> Matheus Ferreira Flausino </string>
+    <string name="text_curse">Engenharia de Computação</string>
+
+    <string name="delete_photo">Foto não foi apagada</string>
+    <string name="error_save">Preencha todos os campos !</string>
+    <string name="error_crop">Não existe aplicativo para Edição</string>
+    <string name="erro_permissoes">Sem as permissões o aplicativo não funciona!</string>
+
+    <string name="open_gallery">Abrir Galeria</string>
+    <string name="open_camera">Abrir Camera</string>
+
+    <plurals name="selecionado">
+        <item quantity="one">%d selecionado</item>
+        <item quantity="other">%d selecionados</item>
+    </plurals>
+
+
+</resources>
