@@ -226,6 +226,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int posicao = 0; posicao < gridView.getChildCount(); posicao++){
                     View view = gridView.getChildAt(posicao);
                     view.setBackgroundColor(Color.TRANSPARENT);
+                    view.setPadding(0,0,0,0);
                 }
             }
 

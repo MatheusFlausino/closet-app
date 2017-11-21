@@ -5,7 +5,7 @@
     <string name="menu_add">Add</string>
     <string name="menu_info">About</string>
     <string name="menu_item_delete">Delet</string>
-    <string name="text_curse">Computer Engeneer</string>
+    <string name="text_curse">Computer Engineering</string>
     <string name="error_save">Complete all fields</string>
     <string name="error_crop">There is no editing application</string>
     <string name="erro_permissoes">Without the application permissions does not work!</string>
@@ -27,5 +27,58 @@
         <item quantity="one">%d selected</item>
         <item quantity="other">%d selected</item>
     </plurals>
+
+    <string-array name="default_types">
+        <item> Accessories </item>
+        <item> Wrappings </item>
+        <item> Bermuda </item>
+        <item> Blouses </item>
+        <item> Bags </item>
+        <item> Caps </item>
+        <item> Boots </item>
+        <item> Pants </item>
+        <item> Shirts </item>
+        <item> Polo Shirts </item>
+        <item> T-Shirts </item>
+        <item> Slippers and Sandals </item>
+        <item> Jackets and Coats </item>
+        <item> Leggings </item>
+        <item> Bags and Backpacks </item>
+        <item> Socks </item>
+        <item> Glasses </item>
+        <item> Watches </item>
+        <item> Skirts </item>
+        <item> sneakers </item>
+        <item> Shoes </item>
+        <item> Shorts </item>
+        <item> Tennis </item>
+        <item> Tops </item>
+        <item> Dresses </item>
+    </string-array>
+
+
+    <string-array name="default_colors">
+        <item> Yellow </item>
+        <item> Blue </item>
+        <item> Navy Blue </item>
+        <item> Blue Oil </item>
+        <item> Beige </item>
+        <item> White </item>
+        <item> Gray </item>
+        <item> Colored </item>
+        <item> Cream </item>
+        <item> Gold </item>
+        <item> Stamped </item>
+        <item> Orange </item>
+        <item> Brown </item>
+        <item> Off White </item>
+        <item> Black </item>
+        <item> Rose </item>
+        <item> Purple </item>
+        <item> Salmon </item>
+        <item> Green </item>
+        <item> Wine </item>
+        <item> Red </item>
+    </string-array>
 
 </resources>
