@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_about">About</string>
+    <string name="all_list">All</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_info">About</string>
+    <string name="menu_item_delete">Delet</string>
+    <string name="text_curse">Computer Engeneer</string>
+    <string name="error_save">Complete all fields</string>
+    <string name="error_crop">There is no editing application</string>
+    <string name="erro_permissoes">Without the application permissions does not work!</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="open_camera">Open Cam</string>
+    <string name="title_alert">Configuration</string>
+    <string name="option_yes">Yes</string>
+    <string name="option_no">No</string>
+    <string name="label_favorite">Favorite</string>
+    <string name="label_color">Color</string>
+    <string name="label_model">Model</string>
+    <string name="label_type">Type</string>
+    <string name="label_noData">No data</string>
+    <string name="delete_photo">Photo not deleted</string>
+    <string name="text_about">Application that lists all the clothes in your closet, with specifications: Type, Color, Model and Photo. \n\nYou can declare which clothes you want to put as a favorite.</string>
+    <string name="message_alert">Do you want to delete these clothes?</string>
+
+    <plurals name="selecionado">
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+
+</resources>

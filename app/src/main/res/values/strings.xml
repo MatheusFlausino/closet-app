@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Closet App</string>
+    <string name="app_name" translatable="false">Closet App</string>
     <string name="title_activity_about">Sobre</string>
 
     <string name="preference" translatable="false">com.matheusflausino.sharedpreferences.PREFERENCES</string>
@@ -77,16 +77,11 @@
     <string name="menu_item_delete">Deletar</string>
 
 
-    <string name="text_about">
-        Aplicativo que lista todas as roupas do seu armário, com especificações: Tipo, Cor, Modelo e Foto.
-        \n\n
-        Você pode declarar quais as roupas que você quer colocar como favorita.
-    </string>
-    <string name="text_author"> Matheus Ferreira Flausino </string>
+    <string name="text_about">Aplicativo que lista todas as roupas do seu armário, com especificações: Tipo, Cor, Modelo e Foto.\n\nVocê pode declarar quais as roupas que você quer colocar como favorito.</string>
+    <string name="text_author" translatable="false"> Matheus Ferreira Flausino </string>
     <string name="text_curse">Engenharia de Computação</string>
 
     <string name="delete_photo">Foto não foi apagada</string>
-    <string name="error_save">Preencha todos os campos !</string>
     <string name="error_crop">Não existe aplicativo para Edição</string>
     <string name="erro_permissoes">Sem as permissões o aplicativo não funciona!</string>
 
@@ -108,5 +103,7 @@
         <item quantity="one">%d selecionado</item>
         <item quantity="other">%d selecionados</item>
     </plurals>
+
+    <string name="error_save">Preencha todos os campos</string>
 
 </resources>
