@@ -93,10 +93,14 @@
     <string name="open_gallery">Abrir Galeria</string>
     <string name="open_camera">Abrir Camera</string>
 
+    <string name="title_alert">Confirmação</string>
+    <string name="option_yes">Sim</string>
+    <string name="option_no">Não</string>
+    <string name="message_alert">Você deseja excluir essa(s) roupa(s) ?</string>
+
     <plurals name="selecionado">
         <item quantity="one">%d selecionado</item>
         <item quantity="other">%d selecionados</item>
     </plurals>
-
 
 </resources>

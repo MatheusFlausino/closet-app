@@ -2,7 +2,9 @@ package com.matheusflausino.closetapp.util;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 
@@ -34,7 +36,23 @@ public class UtilString {
             return false;
         }
     }
+    public static void alertDialog(Context contexto,
+                                    String mensagem,
+                                    DialogInterface.OnClickListener listener){
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(contexto);
+
+        builder.setTitle(R.string.title_alert);
+        builder.setIcon(android.R.drawable.ic_dialog_alert);
+
+        builder.setMessage(mensagem);
+
+        builder.setPositiveButton(R.string.option_yes, listener);
+        builder.setNegativeButton(R.string.option_no, listener);
+
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
     public static String getPreference(Context context, String key){
         SharedPreferences sharedPref = context.getSharedPreferences(context.getString(R.string.preference),
                 Context.MODE_PRIVATE);

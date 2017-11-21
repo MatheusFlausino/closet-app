@@ -1,5 +1,6 @@
 package com.matheusflausino.closetapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,11 +17,13 @@ import android.widget.GridView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.matheusflausino.closetapp.db.DatabaseHelper;
 import com.matheusflausino.closetapp.model.Clothes;
 import com.matheusflausino.closetapp.model.Type;
 import com.matheusflausino.closetapp.repo.ClothesDAO;
 import com.matheusflausino.closetapp.repo.TypeDAO;
 import com.matheusflausino.closetapp.util.GridViewAdapter;
+import com.matheusflausino.closetapp.util.UtilString;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -199,8 +202,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.menuItemExcluir:
-                        deleteClothes();
-                        mode.finish();
+                        deleteClothes(mode);
                         return true;
 
                     case R.id.menuItemFavorite:
@@ -263,17 +265,36 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, ALTERAR);
     }
 
-    private void deleteClothes(){
+    private void deleteClothes(final ActionMode mode){
+        DialogInterface.OnClickListener listener =
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
-        for (int posicao = gridView.getChildCount(); posicao >= 0; posicao--){
-            if (gridView.isItemChecked(posicao)){
-                dbClothes.delete(listItems.get(posicao));
-                listItems.remove(posicao);
-            }
-        }
+                        switch(which){
+                            case DialogInterface.BUTTON_POSITIVE:
 
-        gridAdapter.notifyDataSetChanged();
-        viewList();
+                                for (int pos = gridView.getChildCount(); pos >= 0; pos--){
+                                    if (gridView.isItemChecked(pos)){
+                                        dbClothes.delete(listItems.get(pos));
+                                        listItems.remove(pos);
+                                    }
+                                }
+
+                                gridAdapter.notifyDataSetChanged();
+                                viewList();
+
+                                break;
+                            case DialogInterface.BUTTON_NEGATIVE:
+
+                                break;
+                        }
+
+                        mode.finish();
+                    }
+                };
+
+        UtilString.alertDialog(this, getString(R.string.message_alert), listener);
     }
 
     private void setFavorite(int i){
